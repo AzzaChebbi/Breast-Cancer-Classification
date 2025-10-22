@@ -1,23 +1,22 @@
-# 🧠 Breast Cancer Classification using Machine Learning
+#  Breast Cancer Classification using Machine Learning
 
 A comprehensive machine learning project for predicting **Coimbra breast cancer** using clinical and biochemical biomarkers.  
 This project compares multiple classification algorithms and implements **custom gradient descent optimization** for logistic regression.
 
 ---
 
-## 📋 Table of Contents
-- [Overview](#-overview)
-- [Dataset](#-dataset)
-- [Models Implemented](#-models-implemented)
-- [Results](#-results)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Project Structure](#-project-structure)
-- [Key Findings](#-key-findings)
-- [Technologies Used](#-technologies-used)
+##  Table of Contents
+- [Overview](#overview)
+- [Dataset](#dataset)
+- [Models Implemented](#models-implemented)
+- [Results](#results)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Key Findings](#key-findings)
+- [Technologies Used](#technologies-used)
 ---
 
-## 🎯 Overview
+##  Overview
 
 Breast cancer remains one of the leading causes of cancer-related deaths among women worldwide.  
 This project develops a **binary classification model** to predict whether a patient has Coimbra breast cancer based on clinical and biochemical attributes.
@@ -31,7 +30,7 @@ It includes:
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 The dataset contains **116 patient records** (reduced to 112 after outlier removal) with the following features:
 
@@ -48,14 +47,14 @@ The dataset contains **116 patient records** (reduced to 112 after outlier remov
 | MCP-1 | Monocyte Chemoattractant Protein 1 (pg/dL) |
 | Classification | Target variable (0 = Healthy, 1 = Cancer) |
 
-### 🧹 Data Preprocessing
+###  Data Preprocessing
 - Outlier detection and removal (MCP-1 values > 1500)
 - Feature standardization using `StandardScaler`
 - Train-test split (75% - 25%)
 
 ---
 
-## 🤖 Models Implemented
+##  Models Implemented
 
 ### 1️⃣ K-Nearest Neighbors (KNN)
 - Initial accuracy: 67.86%  
@@ -81,7 +80,7 @@ The dataset contains **116 patient records** (reduced to 112 after outlier remov
 
 ---
 
-## 📈 Results
+##   Results
 
 ### Model Performance Comparison
 
@@ -93,12 +92,12 @@ The dataset contains **116 patient records** (reduced to 112 after outlier remov
 | Naive Bayes | 67.86% | 89.29% | 0.635 |
 | Neural Network | - | 75.00% | - |
 
-### 🏆 Best Model
+###  Best Model
 **Logistic Regression with Gradient Descent** achieved the highest accuracy of **96.43%** on the test set.
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### Prerequisites
 ```bash
@@ -106,13 +105,9 @@ Python 3.8+
 pip or conda package manager
 ```
 
-## 💻 Usage
+##  Usage
 
 ### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/yourusername/breast-cancer-classification.git
-cd breast-cancer-classification
-```
 
 ### 2️⃣ Prepare the Dataset
 
@@ -129,14 +124,7 @@ jupyter notebook breast_cancer_classification.ipynb
 - Evaluate performance
 - Compare and visualize the results
 
-## 📁 Project Structure
-breast-cancer-classification/
-│
-├── dataR2.csv                          # Dataset
-├── breast_cancer_classification.ipynb  # Main notebook
-└── README.md                           # Project documentation
-
-## 🔍 Key Findings
+##  Key Findings
 
 Feature Importance: Glucose, insulin, and leptin levels showed strong correlations with breast cancer classification.
 
@@ -150,23 +138,23 @@ Custom gradient descent on logistic regression achieved the best results (96.43%
 
 Hyperparameter Tuning: Crucial for improving model performance across all algorithms.
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
-🐍 Python 3.x – Core programming language
+Python 3.x – Core programming language
 
-📊 NumPy – Numerical computations
+NumPy – Numerical computations
 
-📈 Pandas – Data manipulation and analysis
+Pandas – Data manipulation and analysis
 
-🎨 Matplotlib & Seaborn – Data visualization
+Matplotlib & Seaborn – Data visualization
 
-🤖 Scikit-learn – Machine learning utilities
+Scikit-learn – Machine learning utilities
 
-🔥 PyTorch – Neural network implementation
+PyTorch – Neural network implementation
 
-🧮 SciPy – Statistical functions and optimizations
+SciPy – Statistical functions and optimizations
 
-📊 Visualizations :
+Visualizations :
 
 - Distribution plots for age and glucose
 - Correlation heatmaps
